@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ProductApi_fakestore_eliza"
+rootProject.name = "KindaStoreApi"
 include(":app")
  

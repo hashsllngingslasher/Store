@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.productapi_fakestore_eliza.ui.home.HomeFragment"
+        android:name="com.example.kindastoreapi.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/navigation_description"
-        android:name="com.example.productapi_fakestore_eliza.ui.dashboard.BasketFragment"
+        android:name="com.example.kindastoreapi.ui.description.DescriptionFragment"
         android:label="Description"
         tools:layout="@layout/fragment_description" >
         <action
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/navigation_payment"
-        android:name="com.example.productapi_fakestore_eliza.ui.payment.PaymentFragment"
+        android:name="com.example.kindastoreapi.ui.payment.PaymentFragment"
         android:label="fragment_payment"
         tools:layout="@layout/fragment_payment" >
         <action
@@ -40,7 +40,7 @@
 
     <fragment
         android:id="@+id/navigation_basket"
-        android:name="com.example.productapi_fakestore_eliza.ui.dashboard.BasketFragment"
+        android:name="com.example.kindastoreapi.ui.cart.BasketFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_basket" >
         <action
@@ -50,5 +50,10 @@
             android:id="@+id/action_navigation_basket_to_navigation_payment"
             app:destination="@id/navigation_payment" />
     </fragment>
+    <fragment
+        android:id="@+id/myQrFragment"
+        android:name="com.example.kindastoreapi.ui.payment.MyQrFragment"
+        android:label="fragment_my_qr"
+        tools:layout="@layout/fragment_my_qr" />
 
 </navigation>

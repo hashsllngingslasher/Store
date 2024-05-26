@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:background="#4DA9CD"
+            android:background="#B3C5E3"
             android:padding="8dp"
             android:orientation="vertical">
             <androidx.cardview.widget.CardView
@@ -49,7 +49,6 @@
                     android:text="Red sweater"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:layout_marginStart="16dp"
                     />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -61,8 +60,8 @@
                         android:text="60"
                         android:textSize="26sp"
                         android:textStyle="bold"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="38dp"/>
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="15dp"/>
                     <TextView
                         android:id="@+id/icon_dollars"
                         android:layout_width="wrap_content"
@@ -85,18 +84,18 @@
                         android:id="@+id/ability_card"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="is available/out of store"
-                        android:textSize="12sp"
-                        android:textStyle="bold"/>
+                        android:text="category"
+                        android:layout_marginStart="15dp"
+                        android:textSize="12sp" />
                     <ImageButton
                         android:id="@+id/btn_zoom"
                         android:layout_width="60dp"
                         android:layout_height="40dp"
                         android:layout_gravity="right"
                         android:layout_marginEnd="1dp"
-                        android:background="#4DA9CD"
+                        android:background="#B3C5E3"
                         android:contentDescription="more"
-                        android:src="@android:drawable/arrow_down_float"
+                        android:src="@drawable/search"
                         />
                 </LinearLayout>
 
@@ -105,7 +104,7 @@
             android:id="@+id/tovar_favorite_check"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_home_black_24dp"
+            android:src="@drawable/icon_check"
             android:visibility="invisible"
             android:layout_gravity="center"
             />

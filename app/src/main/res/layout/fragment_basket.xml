@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.BasketFragment"
-    android:background="#F2FDE6"
+    tools:context=".ui.cart.BasketFragment"
+    android:background="#4F688E"
     android:orientation="vertical"
     android:padding="12dp"
     >
@@ -25,10 +25,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your personal basket:"
-        android:background="@color/white"
+        android:text="Shopping Cart"
         android:layout_marginTop="30dp"
-        android:textSize="20sp"
+        android:textColor="#E8E8E8"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="26sp"
         android:layout_gravity="center_horizontal"
         />
 
@@ -43,25 +45,27 @@
         android:id="@+id/place_holder"
         android:layout_width="380dp"
         android:layout_height="180dp"
-        android:src="@drawable/no_product_chosen"
+        android:src="@drawable/empty_cart"
         android:visibility="visible"
         android:layout_marginTop="8dp"
         android:layout_gravity="center_horizontal"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="#E8E8E8"
         android:layout_marginTop="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Count for pay"
+            android:text="Total Bill"
+            android:fontFamily="monospace"
             android:textSize="20sp"
             android:layout_marginStart="12dp"/>
         <TextView
             android:id="@+id/basket_total_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="0.00"
             android:textSize="20sp"
             android:layout_marginStart="18dp"/>
@@ -75,13 +79,15 @@
 
     <Button
         android:id="@+id/btn_pay"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         app:cornerRadius="20dp"
-        android:backgroundTint="#C1D1A6"
+        android:backgroundTint="#253851"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:text="pay"/>
 
 </LinearLayout>

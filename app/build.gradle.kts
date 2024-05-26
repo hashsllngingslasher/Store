@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.productapi_fakestore_eliza"
+    namespace = "com.example.kindastoreapi"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.productapi_fakestore_eliza"
+        applicationId = "com.example.kindastoreapi"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#4F688E"
     tools:context=".ui.home.HomeFragment">
     
     <ImageView
@@ -14,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="8dp"
-        android:src="@drawable/basket"
+        android:src="@drawable/shopping_cart"
         />
     <ProgressBar
         android:id="@+id/progress_bar"
